@@ -4,7 +4,7 @@
 var element = document.getElementById('map');
   
 // Height has to be set. You can do this in CSS too.
-element.style = 'height:600px;';
+element.style = 'height:475px;';
   
 // Create Leaflet map on map element.
 var map = L.map(element, {
