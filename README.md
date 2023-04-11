@@ -1,3 +1,3 @@
 # melofors.github.io
 
-The OpenMemoryMap!
+The OpenMediaMap!
