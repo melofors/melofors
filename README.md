@@ -1,6 +1,6 @@
 # melofors.github.io
 
-https://melofors.github.io/
+https://melofors.github.io/index.html
 
 A website for understanding spectroscopy in astronomy.
 
