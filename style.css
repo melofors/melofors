@@ -2,13 +2,12 @@ body {
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     font-family: Cambria;
     line-height: 1.6;
 }
 
 header {
-    background-image: url("/imgs/sky.png");
+    background-image: url("/imgs/scroll_5stephan.jpg");
     background-size: cover; /* or contain, depending on your preference */
     color: #fff;
     text-align: center;
@@ -17,6 +16,7 @@ header {
 
 #title {
     font-size: 36px;
+
 }
 
 main {
@@ -41,15 +41,27 @@ main {
     border-radius: 5px;
 }
 
-.highlight {
-    background-color: #f6e58d;
-    padding: 2px 5px;
+#caption {
+    color:#2a2a2a;
 }
 
-.center {
-    display: block;
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 525px;
     margin: 0 auto;
-    max-width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+}
+
+.stacked-img {
+    width: 500px;
+    margin-bottom:5px;
 }
 
 footer {
@@ -62,16 +74,7 @@ footer {
 #explanation {
     max-width: 60%;
     margin: 0 auto;
-}
-
-.float-left {
-    float: left;
-    margin: 0 15px 15px 0; /* Adjust the margins to add spacing around the images */
-}
-
-.float-right {
-    float: right;
-    margin: 0 0 15px 15px; /* Adjust the margins to add spacing around the images */
+    font-size: 19px;
 }
 
 /* side by side */
@@ -85,6 +88,66 @@ footer {
 .image-container img {
     width: 300px;
     margin: 10px;
+}
+
+#instruments {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* news */
+
+.news-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+.news-link {
+    text-decoration: none;
+    color: #007BFF;
+    display: flex;
+    align-items: center;
+}
+
+.news-image {
+    width: 150px;
+    margin-right: 30px;
+}
+
+.news-title {
+    font-size: 22px;
+    margin: 0;
+    color: #333;
+    margin-right: 30px;
+}
+
+.news-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
 }
 
 /* button */

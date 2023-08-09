@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
+
 <head>
-<title>Exploring Spectral Data with Webb</title>
-<meta name="description" content="A guide to spectroscopy with the James Webb Space Telescope">
+<title>A Guide to Spectroscopy for Space</title>
+<meta name="description" content="A guide to spectroscopy in astronomy">
 <meta name="keywords" content="jwst spectroscopy jdaviz data telescope astronomy">
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="icon" href="/imgs/logo6.png" />
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="script.js"></script>
 </head>
@@ -16,9 +18,10 @@
 </header>
 
 <main>
+    <!-- INTRO -->
     <section id="introduction">
         <h2>Welcome to the World of Spectroscopy</h2>
-        <p style="font-size:21px;">Behind all the beautiful images we receive from our telescopes ...</p>
+        <p style="font-size:21px;">Behind all the images we receive from our telescopes ...</p>
         <div id="scroll-container">
             <img src="/imgs/scroll_1tarantula.png" class="img">
             <img src="/imgs/scroll_2southern.jpg" class="img">
@@ -27,109 +30,173 @@
             <img src="/imgs/scroll_5stephan.jpg" class="img">
             <img src="/imgs/scroll_6cartwheel.png" class="img">
         </div>
-        <p style="font-size:21px"> ... is a bulk of unassuming data called <b>SPECTRAL DATA</b>.</p>
-    <div style="text-align:center;">
-        <img src="/imgs/logo3.png" style="width:400px;">
-    </div>
+        <p style="font-size:21px"> ... is a mass of critical data called <b>SPECTRAL DATA</b>.</p>
     </section>
+
+    <!-- UNDERSTANDING -->
     <section id="explanation">
         <h2>Understanding Spectral Data</h2>
-        <div>          
-            <p style="font-size:19px;">Spectral data is a record of the energy or radiation emitted by celestial objects across various wavelengths on the electromagnetic spectrum. This spectrum spans from visible light, which our eyes perceive, to X-rays, infrared, ultraviolet, and even radio waves.</p>
+        <div>
+        <p>A prism receives white light and separates it into all its wavelengths—the visual light spectrum. This represents spectroscopy at its most basic form—dividing light into different wavelengths.</p>
+        </br>
+        <div class="image-container">
+            <div style="text-align:center; margin-right:30px">
+                <img src="/imgs/prism4.png" style="width:350px;">
+                <p id="caption">A prism represents a simple form of spectroscopy</p>
+            </div>
+            <div style="text-align:center;">
+                <img src="/imgs/spectroscopy2.png" style="width:350px;">
+                <p id="caption">A more complex system used for astronomy that utilizes the same basic mechanics</p>
+            </div>
+        </div>
+    </br>
+        <p>Spectral data is the different levels of energy emitted by celestial objects across various wavelengths on the electromagnetic spectrum. This spectrum spans from visible light, which our eyes perceive, to X-rays, infrared, ultraviolet, and even radio waves.</p>
             </br>
             <div style="text-align:center;">
                 <img src="/imgs/spec4.png" style="width:600px; margin-bottom:20px; vertical-align:middle;">                   
-                <p style="font-size:18px;">A <b>spectral emission graph</b> of the Sun. The "spectrum" which the data follows is shown below it, hence the word used, "<i>spectr</i>al".</p>
+                <p style="font-size:17px;text-align:center;color:rgb(61, 61, 61)">A spectral emission graph of the Sun, with varying energy levels corresponding to different wavelengths.</p>
             </div>
-            <p style="font-size:19px;">The intensity and pattern of radiation at different wavelengths carry a wealth of crucial information about the object's chemical composition, temperature, velocity, and magnetic fields. By deciphering these spectral signatures, astronomers unveil the secrets of galaxies, stars, and cosmic phenomena.</p>
-            <p style="font-size:19px;">Thus, these complex characteristics can be measured from all the way home, without needing to ever measure directly.</p>
-            </br>
+            <p>The intensity and patterns of radiation at different wavelengths carries a wealth of information about the object such as its chemical composition, temperature, velocity, and magnetic fields. By deciphering these spectral signatures, astronomers can unveil the secrets of galaxies, stars, and cosmic phenomena.</p>
+        </br>
         </div>
     </section>
     <div style="text-align:center;">
         <img src="/imgs/SpectroscopyTellsUs2.png" style="width:900px; vertical-align:middle;">
-        <p style="font-size:18px;">Example features that can be revealed by spectroscopic measurements</p>
+        <p style="font-size:20px;">Example features that can be revealed by spectroscopic measurements</p>
     </div>
-    <div style="text-align:center;"><img src="/imgs/line3.png" style="width:80%;"></div>
     <section id="explanation">
-        <h2>The Science of Spectra</h2>
-        <p style="font-size:19px;">Elements in celestial objects absorb or emit radiation at different radiations, resulting in peaks or dips in the resulting spectra. Scientists have studied specific elements and know which wavelengths of radiation they tend to absorb or emit---this can help identify elements present in a spectral graph.</p>
+    </br>
+    <p style="text-align:center; font-size:28px;">"If signs of life on another planet are ever discovered, they will be found with a spectrograph"</p>
+    <p style="text-align:center; font-size:24px; margin-top:-15px; color:rgb(69, 69, 69)"> — European Southern Observatory</p>
+    </section>
+</br>
+    <!-- SCIENCE -->
+    <section id="explanation">
+        <h2>Analyzing Spectra</h2>
+        <p>Each type of atom only absorbs or emits <b>specific wavelengths</b> of light, making them easy to identify in a spectral graph.</p>
+        <p style="font-size:25px; margin-left:50px;">... spectra of a hydrogen atom</p>
+        <p style="text-align:center;"><b>Below:</b> the absorption (left) and emission (right) spectra of a hydrogen atom</p>
         <div class="image-container">
             <img src="/imgs/absorption.png">
             <img src="/imgs/emission.png">
         </div>
-        <p style="font-size:19px; text-align: center;"><b>Above:</b> the absorption and emission spectra of a hydrogen atom</p>
-        <p style="font-size:19px; text-align: center;">When the atom absorbs light, the electron jumps to a higher energy level. The energy required for this jump results in a dip in the graph at that wavelength, resulting in hydrogen's signature absorption lines seen above.</p>
-
+        <p style="text-align:center; width:60%; margin:auto;"><b>left: </b>when the atom absorbs light, the energy used to absorb the light results in a dip in the graph at certain wavelengths; <b>right:</b> likewise, the energy from those wavelengths is emitted as radiation—these wavelengths are unique to hydrogen only!</p>
         </br>
-        <div style="text-align:center;">
-            <img src="/imgs/hydrogenspec3.png" style="width:550px;">
-            <p>presence of hydrogen in the star Altair, based on the known absorption characteristics of hydrogen atoms</p>
-            <img src="/imgs/altairimgspec.png" style="width:500px; margin-left: 50px;">
-            <p>alternatively, 2D representations may be used</p>
+        <p style="font-size:25px; margin-left:50px;">... spectra of a star</p>
+        <p>based on the above signature of hydrogen, it can then be found within more complex structures</p>
+        <div class="image-container" style="text-align:center;">
+            <img src="/imgs/hydrogenspec3.png" style="width:600px;">
+            <img src="/imgs/arrow.png" style="width:200px;">
         </div>
-        </br>
-        <h2>Measurement</h2>
-        <div style="display: flex;">
-            <div style="flex: 1;">
-                <p style="font-size: 19px;">Spectrographs are instrumental devices used in telescopes and observatories to analyze the spectral data obtained through spectroscopy. They work by dispersing light into its constituent wavelengths and capturing the resulting spectrum. Powerful spectrographs are used in observatories and telescopes, such as the James Webb Space Telescope's two spectroscopic imaging instruments, NirCAM and MIRI.</p>
-            </div>
-            <div style="text-align: center;">
-                <img src="/imgs/prism2.png" style="width: 200px; margin-top: 10px;">
-                <p style="font-size: 14px; color: #888; margin-top: 5px;">Glass prisms disperse light into different wavelengths, similarly to a spectrograph</p>
-            </div>
-        </div>
-        </br>
-        <div>
-            <h2 style="font-size: 24px; color: #333;">Selected Discoveries</h2>
-            <p style="font-size: 16px; color: #555; line-height: 1.6;">
-              <b><a href="https://analyticalscience.wiley.com/do/10.1002/sepspec.804ezine/" target="_blank" style="color: #007BFF; text-decoration: none;">Spectral Shift Reveals Puzzling Quasar</a></b>: Astronomers used spectroscopy to discover a mysterious quasar in a nearby galaxy called NGC 7319. This quasar's light suggested it was billions of light-years away, creating a cosmic paradox since NGC 7319 is only 300 million light-years away. This finding challenges previous assumptions about quasars and their role in measuring distances in the universe, suggesting that current cosmological models may need revision.
-            </p>
-            <p style="font-size: 16px; color: #555; line-height: 1.6;">
-              <b><a href="https://exoplanets.nasa.gov/news/1760/discovery-alert-webb-maps-and-finds-traces-of-water-in-an-ultra-hot-gas-giants-atmosphere/" target="_blank" style="color: #007BFF; text-decoration: none;">Discovery Alert: Webb Maps and Finds Traces of Water in an Ultra-hot Gas Giant's Atmosphere</a></b>: Using spectroscopy with NASA's James Webb Space Telescope, astronomers discovered water vapor in the atmosphere of an intriguing exoplanet, WASP-18 b. They also found temperature variations and indications of a strong magnetic field affecting its winds, providing insights into how such unique planets form.
-            </p>
-          </div>
-
     </br>
+        <p style="font-size:20px;">Other aspects of spectral graphs may provide further clues! For example:</p>
+    </br>
+    <div class="image-container" style="text-align:center;">
+        <img src="/imgs/density3.png" style="width:450px;">
+        <img src="/imgs/DopplerShift.png" style="width:450px;">
+    </div>
+    </br>
+    <p style="font-size:22px;">That is spectroscopy at its core! And it is being used for so much in astronomy.</p>
     </section>
+
+    <!-- NEWS -->
+
+    <section id="discoveries" class="news-section">
+        <h2 class="section-title">Selected Discoveries</h2>
+        <div class="news-item">
+            <a href="https://blogs.nasa.gov/webb/2022/12/09/nasas-webb-reaches-new-milestone-in-quest-for-distant-galaxies/" target="_blank" class="news-link">
+                <img src="/imgs/article1image.jpg" class="news-image">
+                <div class="news-content">
+                    <h3 class="news-title">NASA’s Webb Reaches New Milestone in Quest for Distant Galaxies</h3>
+                    <p class="news-date">December 9, 2022</p>
+                    <p class="news-description">Some of the earliest known galaxies were confirmed and analyzed using spectroscopic observations, revealing their redshift and characteristics, shedding light on their properties and the universe's early evolution.</p>
+                </div>
+            </a>
+        </div>
+        <div class="news-item">
+            <a href="https://phys.org/news/2023-02-worlds-quantitative-spectroscopy.html" target="_blank" class="news-link">
+                <img src="/imgs/article3image1.jpg" class="news-image">
+                <div class="news-content">
+                    <h3 class="news-title">Discovering new worlds with quantitative spectroscopy</h3>
+                    <p class="news-date">February 28, 2023</p>
+                    <p class="news-description">The Vatican-Potsdam Northern Ecliptic Pole (VPNEP) survey took spectroscopic data from over 1,000 stars for potential exoplanets, yielding precise parameters for each star and paving the way for future insights into star-planet relationships.</p>
+                </div>
+            </a>
+        </div>
+        <div class="news-item">
+            <a href="https://exoplanets.nasa.gov/news/1760/discovery-alert-webb-maps-and-finds-traces-of-water-in-an-ultra-hot-gas-giants-atmosphere/" target="_blank" class="news-link">
+                <img src="/imgs/article2image1.png" class="news-image">
+                <div class="news-content">
+                    <h3 class="news-title">Discovery Alert: Webb Maps and Finds Traces of Water in an Ultra-hot Gas Giant's Atmosphere</h3>
+                    <p class="news-date">May 31, 2023</p>
+                    <p class="news-description">Water vapor was discovered in the atmosphere of the exoplanet WASP-18 b. They also found temperature variations and indications of a strong magnetic field affecting its winds, providing insights into how such unique planets form.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
     <div style="width: 60%; margin: 0 auto;">
         <p style="font-size: 28px; text-align: center;">The analysis of these patterns to unravel the intricate mysteries of the universe is an art form unlike any other—and one that should be accessible by anybody.</p>
     </div>
     </br>
-
+</br>
     <section id="instruments">
-        <h2 style="text-align:center;">Data Analysis Tools --- jdaviz</h2>
-        <p>To assist with incoming data from the James Webb Space Telescope as well as from other missions, spectral imaging tools have been made available by the team at the Space Telescope Science Institue.</p>
-        <ul>
-            <li><strong>Cubeviz:</strong> A tool for visualization and analysis of 3D data cubes from integral field units (IFUs).</li>
-            <li><strong>Specviz:</strong> A tool for visualization and quick-look analysis of 1D astronomical spectra.</li>
-        </ul>
+        <h2 style="text-align:center; font-size:30px;">Data Analysis</h2>
+        <p style="font-size:22px;">To assist with incoming data from the James Webb Space Telescope as well as from other missions, spectral imaging tools have been made available by the team at the Space Telescope Science Institute.</p>
     </br>
+
+    <div class="image-stack">
+        <img src="/imgs/display.gif" class="stacked-img">
+        <img src="/imgs/graph2.gif" class="stacked-img">
+    </div>
+    <p style="text-align:center; font-size:20px;">Analysis of the star PDS 70 in Cubeviz</p>
+
+</br>
+</br>
 
     <div class="image-container">
         <div>
-        <img src="/imgs/ngc7319.png" style="width: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-        <p style="margin-top: 10px; font-size: 18px;">Analyze NGC 7319 in Cubeviz:</p>
-        <a href="https://mast.stsci.edu/viz/ui/#/spectra?uri=mast%3AJWST%2Fproduct%2Fjw02732-o004_t004_miri_ch3-shortmediumlong_s3d.fits" target="_blank">
-          <button class="aesthetic-button">Analyze</button>
-        </a>
+            <img src="/imgs/ngc7319.png" style="height:250px; border-radius:8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <p style="margin-top:10px; font-size:18px;">Analyze NGC 7319 in Cubeviz:</p>
+            <a href="https://mast.stsci.edu/viz/ui/#/spectra?uri=mast%3AJWST%2Fproduct%2Fjw02732-o004_t004_miri_ch3-shortmediumlong_s3d.fits" target="_blank">
+            <button class="aesthetic-button">Analyze</button>
+            </a>
         </div>
-        <img src="/imgs/cartwheel.png" style="width: 300px; margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-          <p style="margin-top: 10px; font-size: 18px;">Analyze the Cartwheel Galaxy in Cubeviz:</p>
-        <a href="https://mast.stsci.edu/viz/ui/#/spectra?uri=mast%3AJWST%2Fproduct%2Fjw02727-o006_t063_nirspec_prism-clear_s3d.fits" target="_blank">
-          <button class="aesthetic-button">Analyze</button>
-        </a>
+        <div>
+            <img src="/imgs/cartwheel.png" style="height:250px; margin-top:8px; border-radius:8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <p style="margin-top:10px; font-size:18px;">Analyze the Cartwheel Galaxy in Cubeviz:</p>
+            <a href="https://mast.stsci.edu/viz/ui/#/spectra?uri=mast%3AJWST%2Fproduct%2Fjw02727-o006_t063_nirspec_prism-clear_s3d.fits" target="_blank">
+            <button class="aesthetic-button">Analyze</button>
+            </a>
+        </div>
     </div>
-        </br>
-        </br>
-        </br>
         </br>
         </br>
     </section>
 
 </br>
 
-    <!-- Add more sections for other steps, such as Line Fitting, Continuum Measurement, etc. -->
+    <!-- INSTRUMENTS -->
+    <section id="explanation">
+        <h2>Instruments</h2>
+        <p style="font-size: 19px;">Spectrographs are the instruments used to measure spectroscopic data. They are contained within both telescopes and observatories. Two spectral imaging instruments were recently launched aboard the James Webb Space Telescope, NirCAM and MIRI.</p>
+    </section>
+    </br>
+        <div style="text-align:center;">
+            <img src="/imgs/instruments2.png" style="width:800px; text-align:center; margin:auto;">
+        </div>
+    </br>
+    </br>
+        <div class="image-container">
+            <img src="/imgs/nirspec.png" style="width:225px;padding-right:30px;">
+            <img src="/imgs/miri.png" style="width:225px;padding-left:30px;">
+        </div>
+        <p style="text-align:center;"><b>left: </b>NIRSpec <b>right: </b>MIRI</p>
+    </br>
+</br>
+</br>
+
 </main>
 
 <footer>
